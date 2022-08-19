@@ -21,9 +21,9 @@ El programa inicalmente contará con un menú donde mostrará todas las opciones
 2) pedir fecha actual (formato dd/mm/aaaa)
 3) despelgar menu con las opciones:
     1. registrar cambio (cada cambio es guardado en un archivo con su respectiva fecha)
-       \ a. ingreso (ahorro+cantidad) 
-       \ b. gasto (ahorro-cantidad)
-        \ c. gasto recurrente (ahorro-cantidad-rec)
+        - ingreso (ahorro+cantidad) 
+        - gasto (ahorro-cantidad)
+        - gasto recurrente (ahorro-cantidad-rec)
         
     2. acceso a historial (desplegar cambios guardados en el archivo)
     3. graficar tendencia diaria (comparación del dia en eje x y el cambio de dinero en el eje y)
