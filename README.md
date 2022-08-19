@@ -9,6 +9,7 @@ Los objetivos de este programa son:
 
 Los detalles clave de este programa son:
   - fecha de cada transacción
+  - guardado de historial por un archivo
   - acceso al historial de cada tipo de transacción
   - graficación de las tendencias del usuario
   - posibilidad de hacer un budget personalizado
