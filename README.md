@@ -11,21 +11,27 @@ Los detalles clave de este programa son:
   - fecha de cada transacción
   - guardado de historial por un archivo
   - acceso al historial de cada tipo de transacción
-  - graficación de las tendencias del usuario
-  - posibilidad de hacer un budget personalizado
+  - moatrar el cambio diario de dinero del usuario
+  - posibilidad de hacer un budget
 
 ## Funcionalidad
-El programa inicalmente contará con un menú donde mostrará todas las opciones y cada submenú ejectara cada una de las características previamente mencionadas. La primera vez que se ejecute el programa este pedirá su cantidad de ahorros inicial y desde ahi se desplegarán las opciones para introducir cambios (gastos, ingresos, etc.) Las demás opciones son acceso al historial (con fechas), acceso a la gráfica de tendencia diaria y opción para que el programa genere un budget recomendado para el usuario.
+El programa inicalmente contará con un menú donde mostrará todas las opciones y cada submenú ejectara cada una de las características previamente mencionadas. La primera vez que se ejecute el programa este pedirá su cantidad de ahorros inicial y desde ahi se desplegarán las opciones para introducir cambios (gastos, ingresos, etc.) Las demás opciones son acceso al historial (con fechas),  cambio diario de los ahorros y opción para que el programa genere un budget recomendado para el usuario.
 
 1) si es la primera vez que se accesa, el programa pide ahorros iniciales
-2) pedir fecha actual (formato dd/mm/aaaa)
+2) obtener fecha actual (formato dd/mm/aaaa)
 3) despelgar menu con las opciones:
     1. registrar cambio (cada cambio es guardado en un archivo con su respectiva fecha)
-        - ingreso (ahorro+cantidad) 
+        - ingreso (ahorro+cantidad)
+           + pedir cantidad --> obtener fecha --> guardar en el archivo
         - gasto (ahorro-cantidad)
-        - gasto recurrente (ahorro-cantidad-rec)
+           + pedir cantidad --> obtener fecha --> guardar en el archivo
         
     2. acceso a historial (desplegar cambios guardados en el archivo)
-    3. graficar tendencia diaria (comparación del dia en eje x y el cambio de dinero en el eje y)
-    4. budget recomendado segun los ingresos (ejemplo: 60%-gastos escenciales, 30%-ahorros y 10%-lujos/diversión)
-    5. salir
+       + leer archivo --> crear una tabla --> desplegar tabla con datos
+    4. mostrar el cambio del dia a dia
+       + valor actual = valor ayer + ingresos - gastos --> cambio = valor actual - valor ayer
+    6. budget recomendado segun el ingresos (ejemplo: 60%-gastos escenciales, 30%-ahorros y 10%-lujos/diversión)
+       + escenciales = ingreso*0.6 | ahorros = ingreso*0.3 | lujos = ingreso*0.1
+    8. salir
+
+
