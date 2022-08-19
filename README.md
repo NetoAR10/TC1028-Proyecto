@@ -22,16 +22,16 @@ El programa inicalmente contará con un menú donde mostrará todas las opciones
 3) despelgar menu con las opciones:
     1. registrar cambio (cada cambio es guardado en un archivo con su respectiva fecha)
         - ingreso (ahorro+cantidad)
-           + pedir cantidad --> obtener fecha --> guardar en el archivo
+           + `pedir cantidad --> obtener fecha --> guardar en el archivo`
         - gasto (ahorro-cantidad)
-           + pedir cantidad --> obtener fecha --> guardar en el archivo
+           + `pedir cantidad --> obtener fecha --> guardar en el archivo`
         
     2. acceso a historial (desplegar cambios guardados en el archivo)
-       + leer archivo --> crear una tabla --> desplegar tabla con datos
+       + `leer archivo --> crear una tabla --> desplegar tabla con datos`
     4. mostrar el cambio del dia a dia
-       + valor actual = valor ayer + ingresos - gastos --> cambio = valor actual - valor ayer
+       + `valor actual = valor ayer + ingresos - gastos --> cambio = valor actual - valor ayer`
     6. budget recomendado segun el ingresos (ejemplo: 60%-gastos escenciales, 30%-ahorros y 10%-lujos/diversión)
-       + escenciales = ingreso*0.6 | ahorros = ingreso*0.3 | lujos = ingreso*0.1
+       + `escenciales = ingreso*0.6 | ahorros = ingreso*0.3 | lujos = ingreso*0.1`
     8. salir
 
 
