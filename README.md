@@ -1,4 +1,4 @@
-# Administrador de Finanzas
+# Proyecto TC1028 "Administrador de Finanzas"
 ## Contexto
 Muchas personas no llevan buen control de sus finanzas y esto puede llevar a problemas como meterse en deudas, no poder pagar pagos importantes o gastar más de lo que ahorran. Los malos hábitos financieros tienen consecuencias severas sobre las personas ya que estos pueden facilmente arruinar sus vidas al destruir familias, empeorar creditos hipotecarios, pérdida de bienes, etc. Este programa también sirve para ayudar a los jóvenes adultos que van empezando a tener flujo de dinero constante y que no saben como manejarlo de una manera optimizada.
 
