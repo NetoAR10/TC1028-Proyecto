@@ -34,4 +34,7 @@ El programa inicalmente contará con un menú donde mostrará todas las opciones
        + `escenciales = ingreso*0.6 | ahorros = ingreso*0.3 | lujos = ingreso*0.1`
     8. salir
 
-
+## Instrucciones
+Descargar el arvhivo y correr en terminal con:
+ `python proyecto.py`
+ Responder a las preguntas que aparecen, el programa aún no incluye menú, archivos ni historial.
