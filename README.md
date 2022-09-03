@@ -37,4 +37,4 @@ El programa inicialmente contará con un menú donde mostrará todas las opcione
 ## Instrucciones
 Descargar el archivo y correr en terminal con:
  `python proyecto.py`
- Responder a las preguntas que aparecen, el programa aún no incluye menú, archivos ni historial.
+ Responder a las preguntas que aparecen, el programa aún no incluye archivos ni historial.
