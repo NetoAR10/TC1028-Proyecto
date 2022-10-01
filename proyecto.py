@@ -20,20 +20,47 @@ def armar_fecha():
         print("Fecha válida", fecha)
     except ValueError:
         print("Fecha inválida")
+
+lista = [26,500,64,167,385]
+
+def minimo(lista):
+    min = lista[0]
+    for num in lista:
+        if num < min:
+            min = num
+    return min
+
+def maximo(lista):
+    max = lista[0]
+    for num in lista:
+        if num > max:
+            max = num
+    return max
+
+def longitud(lista):
+    cont = 0
+    for cont in lista:
+        cont = cont + 1
+    return cont
+
+def prom(lista):
+    promedio = sum(lista) / len(lista)
+    return promedio
     
 def menu():
-    print("MENU")
+    print("\nMENU")
     print("1) Budget")
     print("2) Cambio del Dia")
     print("3) Introducir Fecha")
     print("4) Historial (aun no sirve)")
-    print("5) Salir")
+    print("5) Datos de Gastos")
+    print("6) Salir")
 
-print(menu())
+menu()
 
 opcion=int(input())
 
-while opcion != 5: 
+while opcion != 6: 
     if(opcion == 1):
         print("Introduce tu ingreso para armar tu budget")
         ingreso = float(input())
@@ -41,7 +68,7 @@ while opcion != 5:
             print("La cantidad no puede ser negativa")
         else:
             budget(ingreso)
-            print(menu())
+            menu()
             opcion=int(input())
 
     elif(opcion == 2):
@@ -56,20 +83,27 @@ while opcion != 5:
         else:
             print("el cambio del dia fue: ")
             print(cambio_dia(ingreso, ahorro_1, gasto))
-            print(menu())
+            menu()
             opcion=int(input())
 
     elif(opcion == 3):
         armar_fecha()
-        print(menu())
+        menu()
         opcion=int(input())
 
     elif(opcion == 4):
         print("el historial aun no existe")
-        print(menu())
+        menu()
         opcion=int(input())
 
-    elif(opcion < 1 or opcion > 5):
-        print("elige opcion del 1 al 5")
-        print(menu())
+    elif(opcion == 5):
+        print("Tu gasto mayor es:", maximo(lista))
+        print("Tu gasto menor es:", minimo(lista))
+        print("Tu gasto promedio es:", prom(lista))
+        menu()
+        opcion=int(input())
+
+    elif(opcion < 1 or opcion > 6):
+        print("elige opcion del 1 al 6")
+        menu()
         opcion=int(input())
