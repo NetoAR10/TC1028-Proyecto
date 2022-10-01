@@ -32,7 +32,8 @@ El programa inicialmente contará con un menú donde mostrará todas las opcione
        + `valor actual = valor ayer + ingresos - gastos --> cambio = valor actual - valor ayer`
     6. budget recomendado según el ingresos (ejemplo: 60%-gastos esenciales, 30%-ahorros y 10%-lujos/diversión)
        + `esenciales = ingreso*0.6 | ahorros = ingreso*0.3 | lujos = ingreso*0.1`
-    8. salir
+    8. datos de los gastos guardados (gasto máximo, gasto mínimo, promedio de los gastos)
+    10. salir
 
 ## Instrucciones
 Descargar el archivo y correr en terminal con:
