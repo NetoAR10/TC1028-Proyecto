@@ -1,5 +1,7 @@
 from datetime import datetime
 
+#LA PARTE DE HISTORIAL YA FUNCIONA PERO COMO AUN NO SE USAN ARCHIVOS, SE TIENE QUE INTRODUCIR EL HISTORIAL MANUAL CADA CICLO Y DESPLIEGA LO QUE VA DEL HISTORIAL CADA VEZ
+
 def cambio_dia(ingreso, ahorro_1, gasto):
     ahorro_2 = ahorro_1 + ingreso - gasto
     cambio = ahorro_2 - ahorro_1
