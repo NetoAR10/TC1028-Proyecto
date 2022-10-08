@@ -20,6 +20,15 @@ def armar_fecha():
         print("Fecha válida", fecha)
     except ValueError:
         print("Fecha inválida")
+    return fecha
+
+def pedir_ingreso():
+    print("Escribe tu ingreso: ")
+    return float(input())
+
+def pedir_gasto():
+    print("Escribe tu gasto: ")
+    return float(input())
 
 lista = [26,500,64,167,385]
 
@@ -46,13 +55,15 @@ def longitud(lista):
 def prom(lista):
     promedio = sum(lista) / len(lista)
     return promedio
+
+historial = []
     
 def menu():
     print("\nMENU")
     print("1) Budget")
     print("2) Cambio del Dia")
     print("3) Introducir Fecha")
-    print("4) Historial (aun no sirve)")
+    print("4) Historial")
     print("5) Datos de Gastos")
     print("6) Salir")
 
@@ -92,7 +103,13 @@ while opcion != 6:
         opcion=int(input())
 
     elif(opcion == 4):
-        print("el historial aun no existe")
+        fecha = armar_fecha()
+        ingreso = pedir_ingreso()
+        gasto = pedir_gasto()
+        datos_dia = [fecha, ingreso, gasto]
+        historial.append(datos_dia)
+        for dia in historial:
+            print(f"el dia es {dia[0]} el ingreso fue de {dia[1]} el gasto fue de {dia[2]}")
         menu()
         opcion=int(input())
 
