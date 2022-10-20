@@ -13,29 +13,31 @@ Los detalles clave de este programa son:
   - acceso al historial de cada tipo de transacción
   - mostrar el cambio diario de dinero del usuario
   - posibilidad de hacer un budget
+  - muestra el dinero ahorrado actual
 
 ## Funcionalidad
 El programa inicialmente contará con un menú donde mostrará todas las opciones y cada submenú ejecutará cada una de las características previamente mencionadas. La primera vez que se ejecute el programa este pedirá su cantidad de ahorros inicial y desde ahí se desplegarán las opciones para introducir cambios (gastos, ingresos, etc.) Las demás opciones son acceso al historial (con fechas), cambio diario de los ahorros y opción para que el programa genere un budget recomendado para el usuario.
 
 1) si es la primera vez que se accede, el programa pide ahorros iniciales
-2) obtener fecha actual (formato dd/mm/aaaa)
+2) obtener fecha actual (formato aaaa/mm/dd)
 3) desplegar menú con las opciones:
-    1. registrar cambio (cada cambio es guardado en un archivo con su respectiva fecha)
-        - ingreso (ahorro+cantidad)
-           + `pedir cantidad --> obtener fecha --> guardar en el archivo`
-        - gasto (ahorro-cantidad)
-           + `pedir cantidad --> obtener fecha --> guardar en el archivo`
-        
-    2. acceso a historial (desplegar cambios guardados en el archivo)
-       + `leer archivo --> crear una tabla --> desplegar tabla con datos`
-    4. mostrar el cambio del día a día
-       + `valor actual = valor ayer + ingresos - gastos --> cambio = valor actual - valor ayer`
-    6. budget recomendado según el ingresos (ejemplo: 60%-gastos esenciales, 30%-ahorros y 10%-lujos/diversión)
+    1. budget recomendado según el ingresos (ejemplo: 60%-gastos esenciales, 30%-ahorros y 10%-lujos/diversión)
        + `esenciales = ingreso*0.6 | ahorros = ingreso*0.3 | lujos = ingreso*0.1`
+
+    2. agregar datos de otro día
+       + `pedir fecha --> pedir ingresos y gastos --> escribirlos en el historial`
+   
+    4. diferencia del dia actual al anterior
+       + `confirma si hay mas de un día registrado --> checa el penúltimo y el último día registrado --> despliega los totales y la diferencia`
+
+    6. acceso a historial
+       + `leer archivo --> desplegar datos con fechas, ingresos y gastos respectivos`
+       
     8. datos de los gastos guardados (gasto máximo, gasto mínimo, promedio de los gastos)
+       + `no toma en consideracion los gastos con la cantidad de 0 para el gasto mínimo`
     10. salir
 
 ## Instrucciones
 Descargar el archivo y correr en terminal con:
  `python proyecto.py`
- Responder a las preguntas que aparecen, el programa aún no incluye archivos ni historial.
+ Responder a las preguntas que aparecen, el programa crea el archivo "historial.txt" la primera vez se corre.
