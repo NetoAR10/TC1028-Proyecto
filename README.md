@@ -37,6 +37,17 @@ El programa inicialmente contará con un menú donde mostrará todas las opcione
        + `no toma en consideracion los gastos con la cantidad de 0 para el gasto mínimo`
     10. salir
 
+## Uso de APIs
+El programa se apoya del uso de 2 APIs, "datetime" y "os"
+
+ 1. datetime
+    + Es usado para hacer la creación de las fechas, el API checa si la fecha escrita es una fecha real.
+    + https://docs.python.org/3/library/datetime.html
+    
+ 2. os
+    + Es usado para que el programa cheque si existe el archivo "historial.txt" dentro de la carpeta donde se corre el código
+    + https://docs.python.org/3/library/os.path.html#os.path.exists
+
 ## Instrucciones
 Descargar el archivo y correr en terminal con:
  `python proyecto.py`
